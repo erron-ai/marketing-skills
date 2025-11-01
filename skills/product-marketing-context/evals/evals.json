@@ -1,0 +1,29 @@
+{
+  "skill_name": "product-marketing-context",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to set up context so I don't have to repeat myself every time I ask for marketing help.",
+      "expected_output": "Should check for existing .agents/product-marketing-context.md first. If not found, should offer two paths: auto-draft from codebase or build from scratch. Should explain what the context document is and why it helps. Should begin gathering information conversationally, starting with product overview.",
+      "assertions": [
+        "Checks for existing context file",
+        "Offers auto-draft or scratch options",
+        "Explains the purpose of the document",
+        "Begins gathering product overview information"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Update my ICP — we're now targeting mid-market companies instead of startups.",
+      "expected_output": "Should read the existing context file first. Should identify the Target Audience section and update it based on the new ICP. Should ask clarifying questions about what changed specifically. Should not overwrite unrelated sections.",
+      "assertions": [
+        "Reads existing context file first",
+        "Focuses update on Target Audience section",
+        "Asks about what specifically changed",
+        "Preserves unchanged sections"
+      ],
+      "files": []
+    }
+  ]
+}
