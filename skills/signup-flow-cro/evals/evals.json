@@ -1,0 +1,32 @@
+{
+  "skill_name": "signup-flow-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our signup form has 9 fields and we see a 40% drop-off rate. What should we cut?",
+      "expected_output": "Should apply the Form Field Reduction framework. Should ask what each field is used for. Should identify fields that can be deferred post-activation (phone, company size, role). Should recommend keeping email, password or SSO, and first name. Should suggest testing SSO options. Should provide a friction map and Quick Wins section.",
+      "assertions": [
+        "Applies field reduction framework",
+        "Identifies deferrable fields",
+        "Recommends keeping essential fields",
+        "Suggests SSO options",
+        "Produces friction map",
+        "Produces Quick Wins section"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We added a credit card requirement to our trial signup and completion dropped 35%. How do we fix this?",
+      "expected_output": "Should identify the credit card requirement as a major trust and friction barrier. Should recommend removing the credit card requirement if the business model allows. Should suggest adding 'No credit card required' messaging if keeping free trials. Should recommend testing alternatives like delayed billing or trial extensions. Should reference onboarding-cro for activation improvements.",
+      "assertions": [
+        "Identifies credit card as primary friction source",
+        "Recommends removing requirement if possible",
+        "Suggests 'No credit card required' messaging",
+        "Recommends testing alternatives",
+        "References onboarding-cro"
+      ],
+      "files": []
+    }
+  ]
+}
