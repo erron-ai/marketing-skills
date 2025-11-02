@@ -1,0 +1,19 @@
+{
+  "skill_name": "paywall-upgrade-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our free users hit a 3-project limit and only 4% upgrade. The screen just says 'You've reached your project limit. Upgrade to Pro.' How do we improve this?",
+      "expected_output": "Should identify weak gate language as a problem. Should recommend reframing from restriction to value unlocked. Should provide alternative copy using strong framing. Should recommend adding context about what they've done and what upgrading enables. Should suggest adding social proof and pricing anxiety reducers near the CTA.",
+      "assertions": [
+        "Identifies weak gate language",
+        "Recommends value-first reframing",
+        "Provides improved copy alternatives",
+        "Recommends contextual messaging",
+        "Suggests social proof near CTA",
+        "Suggests pricing anxiety reducers"
+      ],
+      "files": []
+    }
+  ]
+}
