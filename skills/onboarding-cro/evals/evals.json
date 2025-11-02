@@ -1,0 +1,33 @@
+{
+  "skill_name": "onboarding-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our trial-to-paid conversion is 4% and we think most people aren't activating. How do we improve onboarding?",
+      "expected_output": "Should ask about or identify the aha moment for the product. Should request current activation rate and drop-off data. Should map the activation path. Should identify bloat to remove. Should recommend in-app guidance patterns and a welcome email sequence. Should provide metrics to track.",
+      "assertions": [
+        "Asks about or identifies the aha moment",
+        "Requests activation rate and drop-off data",
+        "Maps the activation path",
+        "Identifies steps to remove or defer",
+        "Recommends in-app guidance patterns",
+        "Recommends welcome email sequence",
+        "Provides metrics to track"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We have a 10-step onboarding checklist and users complete an average of 3 steps before going inactive.",
+      "expected_output": "Should identify that the checklist has too many steps. Should apply the activation path framework to find the minimum steps needed to reach first value. Should recommend cutting or deferring steps that don't directly lead to the aha moment. Should recommend reordering so the most compelling steps come first. Should suggest adding a single high-value action as the first step.",
+      "assertions": [
+        "Identifies checklist length as a problem",
+        "Applies activation path framework",
+        "Recommends cutting or deferring steps",
+        "Recommends reordering for momentum",
+        "Suggests a compelling first step"
+      ],
+      "files": []
+    }
+  ]
+}
