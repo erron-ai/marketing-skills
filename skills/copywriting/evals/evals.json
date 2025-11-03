@@ -1,0 +1,32 @@
+{
+  "skill_name": "copywriting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write homepage copy for our B2B project management tool. It helps remote engineering teams track work without the overhead of Jira.",
+      "expected_output": "Should load product-marketing-context.md first. Should ask about primary audience, conversion goal, and any constraints. Should produce hero headline (multiple options), subheadline, value proposition expansion, feature-to-benefit section, social proof, and CTA. Should include rationale for copy choices. Should lead with outcomes not features.",
+      "assertions": [
+        "Checks for product-marketing-context.md",
+        "Produces multiple headline options",
+        "Leads with outcomes not features",
+        "Uses specific, credible language",
+        "Includes CTA copy",
+        "Includes rationale"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Rewrite our pricing page. Currently it just lists features with checkboxes and nobody knows which plan to pick.",
+      "expected_output": "Should apply the pricing page framework. Should recommend outcome-focused benefit bullets instead of feature checkboxes. Should recommend a recommended plan with clear reasoning. Should write plan descriptions from the customer's perspective. Should provide FAQ content for top pricing objections.",
+      "assertions": [
+        "Applies pricing page framework",
+        "Recommends outcome-focused benefits over feature lists",
+        "Suggests recommended plan designation",
+        "Writes from customer perspective",
+        "Includes FAQ content"
+      ],
+      "files": []
+    }
+  ]
+}
