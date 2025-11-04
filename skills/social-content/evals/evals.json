@@ -1,0 +1,31 @@
+{
+  "skill_name": "social-content",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a LinkedIn post about how we increased our trial conversion rate from 4% to 11% by simplifying our onboarding.",
+      "expected_output": "Should produce a LinkedIn post with a strong hook (not starting with 'I'm excited'), a story arc about the problem and the change, specific numbers, a key takeaway, and an optional CTA. Should not open with 'I'm excited to share' or any announcement phrasing.",
+      "assertions": [
+        "Does not open with excitement announcement",
+        "Has strong hook in first line",
+        "Includes specific numbers",
+        "Has clear story arc",
+        "Ends with takeaway",
+        "Post is formatted for LinkedIn"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Plan 3 content pillars and give me 5 post ideas for each for our SaaS analytics tool on LinkedIn.",
+      "expected_output": "Should suggest 3 content pillars appropriate for a B2B SaaS analytics tool. Should provide 5 specific post ideas per pillar (not generic topics). Should include post format suggestion for each idea.",
+      "assertions": [
+        "Suggests 3 relevant content pillars",
+        "Provides 5 specific post ideas per pillar",
+        "Post ideas are specific not generic",
+        "Includes format suggestions"
+      ],
+      "files": []
+    }
+  ]
+}
