@@ -1,0 +1,18 @@
+{
+  "skill_name": "ai-seo",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our competitor keeps showing up in Google AI Overviews when people search for our category and we don't. How do we fix this?",
+      "expected_output": "Should explain how AI Overviews select content. Should recommend auditing which queries trigger AI Overviews in the category. Should recommend question-and-answer structure, structured data (FAQ schema), and comprehensive topic coverage. Should recommend analyzing competitor content that is being cited to identify structural patterns. Should provide specific page-level and schema recommendations.",
+      "assertions": [
+        "Explains how AI Overviews select content",
+        "Recommends Q&A content structure",
+        "Recommends FAQ schema markup",
+        "Recommends analyzing cited competitor content",
+        "Provides specific actionable changes"
+      ],
+      "files": []
+    }
+  ]
+}
