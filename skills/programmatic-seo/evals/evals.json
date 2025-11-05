@@ -1,0 +1,19 @@
+{
+  "skill_name": "programmatic-seo",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have integrations with 80 tools. Should we build integration landing pages for each one?",
+      "expected_output": "Should recommend building integration pages. Should provide the URL pattern, template structure, and data requirements. Should warn about quality standards — each page needs genuine content about the integration's use cases. Should recommend prioritizing integrations with the highest search volume first. Should reference site-architecture and seo-audit skills for technical setup.",
+      "assertions": [
+        "Recommends building integration pages",
+        "Provides URL pattern",
+        "Provides template structure",
+        "Warns about thin content quality",
+        "Recommends prioritizing by search volume",
+        "References technical setup skills"
+      ],
+      "files": []
+    }
+  ]
+}
