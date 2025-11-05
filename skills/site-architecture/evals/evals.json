@@ -1,0 +1,19 @@
+{
+  "skill_name": "site-architecture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're rebuilding our SaaS marketing site from scratch. We have a core product, 3 major features, 5 integrations, and a blog. How should we structure it?",
+      "expected_output": "Should apply the tier hierarchy framework. Should define Tier 1, 2, and 3 pages for this product. Should recommend a URL pattern guide. Should design a navigation structure. Should recommend an internal linking strategy connecting the features, integrations, and blog back to the core product pages. Should map visitor journeys for key audience segments.",
+      "assertions": [
+        "Applies tier hierarchy framework",
+        "Defines Tier 1, 2, and 3 pages",
+        "Recommends URL patterns",
+        "Designs navigation structure",
+        "Recommends internal linking strategy",
+        "Maps visitor journeys"
+      ],
+      "files": []
+    }
+  ]
+}
