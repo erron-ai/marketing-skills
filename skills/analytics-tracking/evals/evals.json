@@ -1,0 +1,19 @@
+{
+  "skill_name": "analytics-tracking",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a SaaS tool with a free trial. We use GA4 and Mixpanel. What events should we be tracking?",
+      "expected_output": "Should build a tracking plan for a SaaS free trial business. Should identify P1 events: signed_up, trial_started, activated (first key action), upgraded. Should identify P2 events: feature_used, invited_teammate, etc. Should provide the tracking plan table with event names, triggers, properties, platforms, and priorities. Should recommend marking P1 events as GA4 conversions.",
+      "assertions": [
+        "Builds a tracking plan table",
+        "Identifies P1 events for SaaS trial",
+        "Identifies P2 events",
+        "Specifies properties for each event",
+        "Assigns platform per event",
+        "Recommends GA4 conversion marking"
+      ],
+      "files": []
+    }
+  ]
+}
