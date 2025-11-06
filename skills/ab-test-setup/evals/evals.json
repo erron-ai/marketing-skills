@@ -1,0 +1,20 @@
+{
+  "skill_name": "ab-test-setup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to test changing our pricing page CTA from 'Start Free Trial' to 'Try It Free — No Credit Card Required'. Our current click rate is 3.2% and we get 8,000 page visits per month.",
+      "expected_output": "Should write a hypothesis statement for this test. Should calculate the sample size needed to detect a 20% relative improvement (from 3.2% to ~3.8%). Should calculate test duration based on 8,000 visits/month. Should define primary metric (CTA click rate), secondary metrics, and guardrail metrics. Should produce a test design document.",
+      "assertions": [
+        "Writes hypothesis statement",
+        "Calculates required sample size",
+        "Calculates test duration",
+        "Defines primary metric",
+        "Defines secondary metrics",
+        "Defines guardrail metrics",
+        "Produces test design document"
+      ],
+      "files": []
+    }
+  ]
+}
