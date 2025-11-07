@@ -1,0 +1,19 @@
+{
+  "skill_name": "churn-prevention",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We just have a cancel button that immediately cancels. No cancel flow, no save offers, nothing. How do we build this out?",
+      "expected_output": "Should design a complete cancel flow with: cancellation reason survey, dynamic save offers matched to each reason, and post-cancellation win-back setup. Should provide copy for at least 3 save offer variants. Should recommend setting up a dunning sequence as a separate workstream. Should prioritize implementation steps.",
+      "assertions": [
+        "Designs complete cancel flow",
+        "Includes cancellation reason survey",
+        "Provides dynamic save offers per reason",
+        "Provides copy for save offer variants",
+        "Recommends dunning sequence",
+        "Prioritizes implementation steps"
+      ],
+      "files": []
+    }
+  ]
+}
