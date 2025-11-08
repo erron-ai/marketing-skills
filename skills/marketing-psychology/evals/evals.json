@@ -1,0 +1,18 @@
+{
+  "skill_name": "marketing-psychology",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our pricing page shows the cheapest plan first and 80% of users who convert pick it. How do we get more people choosing the middle or premium plan?",
+      "expected_output": "Should identify the anchoring problem — showing the cheapest plan first sets a low price anchor. Should recommend showing the premium or middle plan first. Should apply the paradox of choice to simplify the plan comparison. Should recommend a 'most popular' or 'recommended' label on the target plan. Should explain the psychology behind each recommendation.",
+      "assertions": [
+        "Identifies anchoring as the primary principle",
+        "Recommends reordering plans to change anchor",
+        "Applies paradox of choice to simplify comparison",
+        "Recommends recommended-plan labeling",
+        "Explains psychology behind each recommendation"
+      ],
+      "files": []
+    }
+  ]
+}
