@@ -1,0 +1,18 @@
+{
+  "skill_name": "marketing-ideas",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're an early-stage SaaS (about 150 paying customers) with a free trial and we sell to operations managers at mid-market companies. Our biggest challenge is getting more qualified traffic. What should we try?",
+      "expected_output": "Should load product-marketing-context.md. Should recommend 3-5 ideas most relevant to early-stage, mid-market B2B with an organic traffic challenge. Should not recommend all 25 ideas. Each recommendation should explain why it fits this specific context and what the first step is. Likely candidates: programmatic SEO, original research, partner webinars, content partnerships, long-form comparison guides.",
+      "assertions": [
+        "Loads product-marketing-context.md",
+        "Recommends 3-5 ideas (not all ideas)",
+        "Explains why each idea fits this specific context",
+        "Provides first step for each recommendation",
+        "Focuses on qualified traffic acquisition"
+      ],
+      "files": []
+    }
+  ]
+}
