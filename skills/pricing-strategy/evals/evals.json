@@ -1,0 +1,18 @@
+{
+  "skill_name": "pricing-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have two pricing tiers ($29/month and $79/month) and 70% of customers choose the $29 plan. We're leaving revenue on the table. What should we change?",
+      "expected_output": "Should analyze the tier structure and identify likely issues: only two tiers (binary choice), possible anchoring problem, possible lack of clear value differentiation between tiers. Should recommend adding a third tier to create proper anchoring. Should recommend reviewing value metric alignment. Should apply anchoring and paradox of choice psychology. Should provide a specific tier redesign recommendation.",
+      "assertions": [
+        "Identifies binary choice problem with two tiers",
+        "Recommends adding a third tier",
+        "Applies anchoring principle",
+        "Reviews value metric alignment",
+        "Provides specific tier redesign"
+      ],
+      "files": []
+    }
+  ]
+}
