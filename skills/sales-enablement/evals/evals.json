@@ -1,0 +1,18 @@
+{
+  "skill_name": "sales-enablement",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write an objection handling guide for our SaaS analytics tool. Our reps say the top objections are 'it's too expensive,' 'we already use Google Analytics,' and 'we don't have bandwidth to implement something new.'",
+      "expected_output": "Should create an objection handling guide in table format for the three specified objections. For each: what they're really saying, a full response, and a proof point or closing question. Should apply psychology principles (reframing, social proof, loss aversion). Should provide responses that uncover next objections rather than trying to close immediately.",
+      "assertions": [
+        "Creates objection handling table",
+        "Covers all three specified objections",
+        "Provides full response for each objection",
+        "Includes proof point or closing question",
+        "Responses are designed to advance the conversation not just deflect"
+      ],
+      "files": []
+    }
+  ]
+}
