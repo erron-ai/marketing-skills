@@ -1,0 +1,19 @@
+{
+  "skill_name": "revops",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have marketing and sales as separate teams now. Marketing says they're sending good leads, sales says the leads are garbage. How do we fix this?",
+      "expected_output": "Should identify the classic MQL definition misalignment problem. Should recommend building a shared lead lifecycle with agreed stage definitions. Should design a lead scoring model. Should recommend a weekly MQL quality review feedback loop. Should suggest adding engagement context to the handoff. Should provide an SLA framework for response times.",
+      "assertions": [
+        "Identifies MQL definition misalignment",
+        "Designs shared lead lifecycle stages",
+        "Builds lead scoring model",
+        "Recommends feedback loop",
+        "Suggests engagement context in handoff",
+        "Provides SLA framework"
+      ],
+      "files": []
+    }
+  ]
+}
