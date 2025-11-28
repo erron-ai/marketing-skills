@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Build target account list",
+    "prompt": "Help me build a target account list for a cybersecurity SaaS targeting mid-market financial services companies.",
+    "expected": ["firmographic", "technographic", "intent", "scoring", "TAL"]
+  },
+  {
+    "name": "Buying committee mapping",
+    "prompt": "Map the buying committee for an enterprise HR platform selling to Fortune 500 companies.",
+    "expected": ["economic buyer", "technical buyer", "champion", "blocker"]
+  },
+  {
+    "name": "Account research",
+    "prompt": "Research Acme Corp for ABM outreach — they're a 500-person logistics company that recently raised Series C.",
+    "expected": ["company news", "decision-makers", "pain", "entry point"]
+  },
+  {
+    "name": "Personalized content",
+    "prompt": "Create a Tier 1 ABM play for a named account in the healthcare vertical.",
+    "expected": ["custom landing page", "executive briefing", "sequence", "AE", "personalized"]
+  }
+]
