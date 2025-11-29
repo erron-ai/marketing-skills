@@ -1,0 +1,22 @@
+[
+  {
+    "name": "YouTube channel architecture",
+    "prompt": "Design a YouTube channel architecture for a B2B sales engagement tool targeting SDRs and AEs.",
+    "expected": ["pillar", "playlist", "trailer", "description", "structure"]
+  },
+  {
+    "name": "Video SEO keyword research",
+    "prompt": "What keywords should we target for YouTube videos about cold email strategies?",
+    "expected": ["primary keyword", "long-tail", "search volume", "competition", "intent"]
+  },
+  {
+    "name": "Video script structure",
+    "prompt": "Give me the script structure for a 10-minute YouTube tutorial on setting up a HubSpot email sequence.",
+    "expected": ["hook", "introduction", "body", "CTA", "timestamps"]
+  },
+  {
+    "name": "Repurposing framework",
+    "prompt": "I just published a 15-minute YouTube video on pricing strategy. How do I repurpose it?",
+    "expected": ["clips", "blog post", "newsletter", "LinkedIn", "Twitter"]
+  }
+]
