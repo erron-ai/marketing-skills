@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Competitive landscape",
+    "prompt": "Map the competitive landscape for a B2B customer data platform (CDP) targeting e-commerce companies.",
+    "expected": ["direct", "indirect", "status quo", "matrix", "competitor"]
+  },
+  {
+    "name": "Review mining",
+    "prompt": "Analyze G2 reviews for Segment (the CDP) and identify the top complaints and reasons customers switch away.",
+    "expected": ["dissatisfaction", "praise", "switch", "sentiment", "patterns"]
+  },
+  {
+    "name": "Battlecard",
+    "prompt": "Build a battlecard for our CDP vs. Segment.",
+    "expected": ["battlecard", "their pitch", "our counter", "win", "traps"]
+  },
+  {
+    "name": "Win/loss analysis",
+    "prompt": "We lost 3 deals to Competitor X last quarter. How should I structure a win/loss analysis to understand why?",
+    "expected": ["win rate", "stated reason", "signals", "patterns", "quarterly"]
+  }
+]
