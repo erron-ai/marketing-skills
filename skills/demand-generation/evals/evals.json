@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Demand funnel mapping",
+    "prompt": "Map the demand generation funnel for a B2B SaaS company selling to marketing operations teams.",
+    "expected": ["awareness", "consideration", "decision", "content", "signal"]
+  },
+  {
+    "name": "Content engine",
+    "prompt": "Build a demand gen content plan for a data warehouse tool targeting analytics engineers.",
+    "expected": ["top of funnel", "middle of funnel", "bottom of funnel", "content type", "ICP"]
+  },
+  {
+    "name": "Lead scoring",
+    "prompt": "Help me build a lead scoring model for our marketing automation platform.",
+    "expected": ["demographic score", "behavioral score", "MQL threshold", "routing", "weight"]
+  },
+  {
+    "name": "Attribution setup",
+    "prompt": "What attribution model should we use and how should we track pipeline by channel?",
+    "expected": ["first touch", "last touch", "linear", "time decay", "pipeline"]
+  }
+]
