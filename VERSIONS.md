@@ -36,6 +36,16 @@ Current versions for all skills. Agents can compare these against locally instal
 | signup-flow-cro | 1.0.0 | 2025-11-01 |
 | site-architecture | 1.0.0 | 2025-11-01 |
 | social-content | 1.0.0 | 2025-11-01 |
+| gtm-strategy | 1.0.0 | 2025-11-28 |
+| product-led-growth | 1.0.0 | 2025-11-28 |
+| account-based-marketing | 1.0.0 | 2025-11-28 |
+| brand-voice | 1.0.0 | 2025-11-28 |
+| community-led-growth | 1.0.0 | 2025-11-29 |
+| influencer-marketing | 1.0.0 | 2025-11-29 |
+| competitive-intelligence | 1.0.0 | 2025-11-29 |
+| video-marketing | 1.0.0 | 2025-11-29 |
+| partnership-strategy | 1.0.0 | 2025-11-30 |
+| demand-generation | 1.0.0 | 2025-11-30 |
 
 ## Changelog
 
@@ -52,3 +62,20 @@ Current versions for all skills. Agents can compare these against locally instal
 - Added 2 growth engineering skills: free-tool-strategy, referral-program
 - Added 4 strategy skills: marketing-ideas, marketing-psychology, launch-strategy, pricing-strategy
 - Added 2 sales and RevOps skills: revops, sales-enablement
+
+### 2025-11-28
+
+- Added 4 new skills: gtm-strategy, product-led-growth, account-based-marketing, brand-voice
+
+### 2025-11-29
+
+- Added 4 new skills: community-led-growth, influencer-marketing, competitive-intelligence, video-marketing
+
+### 2025-11-30
+
+- Added 2 new skills: partnership-strategy, demand-generation
+- Added 10 new tool integrations: notion, slack, producthunt, reddit-ads, lemonsqueezy, twitter-x, crisp, linear, airtable, github-traffic
+
+### 2025-12-01
+
+- Added CLI scripts for all 10 new tools

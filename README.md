@@ -79,6 +79,16 @@ Skills also cross-reference each other:
 | [signup-flow-cro](skills/signup-flow-cro/) | Reduce friction in signup, registration, and free trial activation flows to increase completion rates |
 | [site-architecture](skills/site-architecture/) | Plan page hierarchy, navigation structure, URL patterns, and internal linking strategy |
 | [social-content](skills/social-content/) | Create, schedule, and optimize social media content for LinkedIn, Twitter/X, Instagram, and TikTok |
+| [gtm-strategy](skills/gtm-strategy/) | Build go-to-market plans — ICP tiering, channel selection, 30/60/90-day launch sequencing, and success metrics |
+| [product-led-growth](skills/product-led-growth/) | Design PLG motions — aha moment definition, activation funnels, viral loops, and expansion revenue triggers |
+| [account-based-marketing](skills/account-based-marketing/) | Run ABM programs — target account list building, buying committee mapping, 1:1/1:few/1:many personalization |
+| [brand-voice](skills/brand-voice/) | Define brand voice, tone guidelines, writing style standards, and vocabulary guides across all channels |
+| [community-led-growth](skills/community-led-growth/) | Build product communities — flywheel design, platform selection, seeding strategy, and health metrics |
+| [influencer-marketing](skills/influencer-marketing/) | Run influencer campaigns — creator identification, brief writing, campaign tracking, and ROI measurement |
+| [competitive-intelligence](skills/competitive-intelligence/) | Analyze competitors — competitive matrix, review mining, battlecards, and win/loss analysis |
+| [video-marketing](skills/video-marketing/) | Build YouTube and video strategy — SEO, channel architecture, production frameworks, and repurposing workflows |
+| [partnership-strategy](skills/partnership-strategy/) | Design partner programs — tech integrations, co-marketing, channel resellers, and co-sell motions |
+| [demand-generation](skills/demand-generation/) | Build full-funnel demand gen — content engine, paid strategy, lead scoring, attribution, and sales SLA |
 
 ## Installation
 
@@ -201,6 +211,24 @@ You can also invoke skills directly:
 - `marketing-psychology` — Behavioral science applied to marketing
 - `launch-strategy` — Product and feature launch planning
 - `pricing-strategy` — Pricing, packaging, and monetization
+- `gtm-strategy` — Go-to-market planning and launch sequencing
+- `demand-generation` — Full-funnel pipeline generation
+
+### Growth & PLG
+- `product-led-growth` — PLG motion design and activation optimization
+- `community-led-growth` — Community building and flywheel design
+- `influencer-marketing` — Creator partnerships and campaign management
+
+### Competitive & Brand
+- `competitive-intelligence` — Competitive analysis, battlecards, and win/loss
+- `brand-voice` — Voice definition, tone guidelines, and style standards
+
+### ABM & Partnerships
+- `account-based-marketing` — Target account programs and buying committee plays
+- `partnership-strategy` — Tech partnerships, co-marketing, and reseller programs
+
+### Video
+- `video-marketing` — YouTube strategy, video SEO, and repurposing workflows
 
 ### Sales & RevOps
 - `revops` — Lead lifecycle, scoring, routing, and pipeline management
