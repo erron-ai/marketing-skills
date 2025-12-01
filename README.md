@@ -1,245 +1,164 @@
-# Marketing Skills for AI Agents
+# erron.ai / marketing-skills
 
-A curated collection of agent skills and tool integrations for marketing work. Built by the [erron.ai](https://erron.ai) team for technical marketers, founders, and growth engineers who want AI coding agents to handle conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
+> Agent skills and tool integrations for marketing work — built for teams using AI coding agents.
 
-**Contributions welcome.** Found a better approach or have a new skill to add? [Open a PR](#contributing).
+erron.ai is an Agentic AI consulting company. This is our open-source library of marketing skills for AI coding agents: structured, reusable instructions that give agents deep marketing knowledge across CRO, SEO, copywriting, paid, growth, and strategy.
 
-Have a question or found a bug? [Open an issue](https://github.com/erron-ai/marketing-skills/issues).
+Works with Claude Code, Cursor, Windsurf, OpenAI Codex, and any agent runtime that reads markdown skill files.
 
-## What are Skills?
+---
 
-Skills are markdown files that give AI agents specialized knowledge and step-by-step workflows for specific domains. Drop them into your project and your agent will recognize marketing tasks, apply the right frameworks, and produce higher-quality outputs without needing extra prompting.
+## The idea
 
-## How Skills Work Together
+AI coding agents are good at following instructions. They're less good at knowing *which* marketing frameworks to apply, *when* to apply them, or *what questions to ask first*.
 
-Every skill reads from a shared context document before doing anything. This `product-marketing-context` file holds your product description, target audience, and positioning — so you never repeat yourself across tasks.
+These skills fix that. Each one is a focused workflow — scoped to a single task, written for agents, and designed to produce consistent, high-quality outputs without extra prompting.
 
-```
-                         ┌─────────────────────────────────────┐
-                         │       product-marketing-context      │
-                         │   (all skills read this document)   │
-                         └─────────────────┬───────────────────┘
-                                           │
-   ┌──────────────┬────────────┬───────────┼───────────┬─────────────┬──────────────┐
-   ▼              ▼            ▼           ▼           ▼             ▼              ▼
-┌────────┐ ┌──────────┐ ┌──────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐ ┌──────────┐
-│ SEO &  │ │   CRO    │ │Content & │ │  Paid & │ │ Growth  │ │ Sales &  │ │ Strategy │
-│Content │ │          │ │   Copy   │ │  Meas.  │ │& Retain │ │   GTM    │ │          │
-├────────┤ ├──────────┤ ├──────────┤ ├─────────┤ ├─────────┤ ├──────────┤ ├──────────┤
-│seo-    │ │page-cro  │ │copywrite │ │paid-ads │ │referral │ │revops    │ │mktg-ideas│
-│audit   │ │signup-cro│ │copy-edit │ │ad-creat.│ │free-tool│ │sales-    │ │mktg-psych│
-│ai-seo  │ │onboard-  │ │cold-email│ │ab-test  │ │churn-   │ │enable    │ │          │
-│prog-   │ │ cro      │ │email-seq │ │analytics│ │prevent  │ │launch    │ │          │
-│seo     │ │form-cro  │ │social    │ │         │ │         │ │pricing   │ │          │
-│schema  │ │popup-cro │ │          │ │         │ │         │ │competitor│ │          │
-│content │ │paywall   │ │          │ │         │ │         │ │          │ │          │
-│site-   │ │          │ │          │ │         │ │         │ │          │ │          │
-│arch    │ │          │ │          │ │         │ │         │ │          │ │          │
-└────────┘ └──────────┘ └──────────┘ └─────────┘ └─────────┘ └──────────┘ └──────────┘
-```
+Every skill starts by reading `.agents/product-marketing-context.md` — a shared document that holds your product description, audience, and positioning. Write it once; all skills use it automatically.
 
-Skills also cross-reference each other:
-- `copywriting` ↔ `page-cro` ↔ `ab-test-setup`
-- `revops` ↔ `sales-enablement` ↔ `cold-email`
-- `seo-audit` ↔ `schema-markup` ↔ `ai-seo`
+---
 
-## Available Skills
+## What's in here
 
-| Skill | Description |
+**42 skills** across conversion, copy, SEO, paid, growth, strategy, and more.
+
+**78 tool integration guides** covering the most common marketing platforms — how to authenticate, which APIs to call, and which operations matter for each category.
+
+**71 CLI scripts** — zero-dependency Node.js scripts for interacting with marketing tools directly from the terminal or from within an agent workflow.
+
+---
+
+## Skills
+
+| Skill | What it does |
 |-------|-------------|
-| [ab-test-setup](skills/ab-test-setup/) | Design statistically valid A/B tests and multivariate experiments with proper sample sizes and success metrics |
-| [ad-creative](skills/ad-creative/) | Generate and iterate ad creative at scale — headlines, descriptions, and primary text for any ad platform |
-| [ai-seo](skills/ai-seo/) | Optimize content to appear in AI-generated answers from ChatGPT, Perplexity, Google AI Overviews, and Gemini |
-| [analytics-tracking](skills/analytics-tracking/) | Set up, audit, and improve event tracking across GA4, Mixpanel, Segment, and GTM |
-| [churn-prevention](skills/churn-prevention/) | Build cancel flows, save offers, dunning sequences, and win-back campaigns to reduce involuntary and voluntary churn |
-| [cold-email](skills/cold-email/) | Write B2B cold outreach emails and multi-step follow-up sequences that get replies |
-| [competitor-alternatives](skills/competitor-alternatives/) | Create SEO-optimized comparison and "alternatives to" pages in four formats |
-| [content-strategy](skills/content-strategy/) | Plan topic clusters, content pillars, editorial calendars, and SEO-driven content roadmaps |
-| [copy-editing](skills/copy-editing/) | Edit and sharpen existing marketing copy through multiple focused passes without changing the core message |
-| [copywriting](skills/copywriting/) | Write conversion-focused marketing copy for homepages, landing pages, pricing pages, and feature pages |
-| [email-sequence](skills/email-sequence/) | Design automated email sequences, welcome series, nurture flows, and lifecycle programs |
-| [form-cro](skills/form-cro/) | Optimize lead capture, contact, demo request, and checkout forms to maximize completion rates |
-| [free-tool-strategy](skills/free-tool-strategy/) | Plan engineering-as-marketing tools — calculators, graders, and generators — for SEO and lead generation |
-| [launch-strategy](skills/launch-strategy/) | Plan product launches, feature announcements, and go-to-market rollouts with timelines and channel playbooks |
-| [marketing-ideas](skills/marketing-ideas/) | Curated library of proven SaaS marketing ideas matched to your specific context and growth stage |
-| [marketing-psychology](skills/marketing-psychology/) | Apply cognitive biases, behavioral economics, and psychological principles to marketing decisions |
-| [onboarding-cro](skills/onboarding-cro/) | Optimize post-signup activation flows to get users to their first value moment faster |
-| [page-cro](skills/page-cro/) | Audit and optimize any marketing page to improve conversion rates with prioritized recommendations |
-| [paid-ads](skills/paid-ads/) | Plan and optimize paid campaigns across Google Ads, Meta, LinkedIn, and TikTok |
-| [paywall-upgrade-cro](skills/paywall-upgrade-cro/) | Optimize in-app paywalls, upgrade screens, and feature gates to convert free users to paid |
-| [popup-cro](skills/popup-cro/) | Create and optimize popups, modals, exit-intent dialogs, and sticky bars for conversions |
-| [pricing-strategy](skills/pricing-strategy/) | Advise on pricing models, tier structure, value metrics, and freemium vs. trial decisions |
-| [product-marketing-context](skills/product-marketing-context/) | Create and maintain the shared context document that all other skills read before starting any task |
-| [programmatic-seo](skills/programmatic-seo/) | Plan and build SEO content at scale using templates and data — location, integration, and comparison pages |
-| [referral-program](skills/referral-program/) | Design and optimize referral programs, affiliate programs, and word-of-mouth growth loops |
-| [revops](skills/revops/) | Design lead scoring, routing, CRM automation, and marketing-to-sales handoff processes |
-| [sales-enablement](skills/sales-enablement/) | Create pitch decks, one-pagers, objection-handling docs, demo scripts, and sales playbooks |
-| [schema-markup](skills/schema-markup/) | Implement schema.org structured data in JSON-LD for rich snippets and better SERP visibility |
-| [seo-audit](skills/seo-audit/) | Diagnose and fix technical and on-page SEO issues affecting rankings and crawlability |
-| [signup-flow-cro](skills/signup-flow-cro/) | Reduce friction in signup, registration, and free trial activation flows to increase completion rates |
-| [site-architecture](skills/site-architecture/) | Plan page hierarchy, navigation structure, URL patterns, and internal linking strategy |
-| [social-content](skills/social-content/) | Create, schedule, and optimize social media content for LinkedIn, Twitter/X, Instagram, and TikTok |
-| [gtm-strategy](skills/gtm-strategy/) | Build go-to-market plans — ICP tiering, channel selection, 30/60/90-day launch sequencing, and success metrics |
-| [product-led-growth](skills/product-led-growth/) | Design PLG motions — aha moment definition, activation funnels, viral loops, and expansion revenue triggers |
-| [account-based-marketing](skills/account-based-marketing/) | Run ABM programs — target account list building, buying committee mapping, 1:1/1:few/1:many personalization |
-| [brand-voice](skills/brand-voice/) | Define brand voice, tone guidelines, writing style standards, and vocabulary guides across all channels |
-| [community-led-growth](skills/community-led-growth/) | Build product communities — flywheel design, platform selection, seeding strategy, and health metrics |
-| [influencer-marketing](skills/influencer-marketing/) | Run influencer campaigns — creator identification, brief writing, campaign tracking, and ROI measurement |
-| [competitive-intelligence](skills/competitive-intelligence/) | Analyze competitors — competitive matrix, review mining, battlecards, and win/loss analysis |
-| [video-marketing](skills/video-marketing/) | Build YouTube and video strategy — SEO, channel architecture, production frameworks, and repurposing workflows |
-| [partnership-strategy](skills/partnership-strategy/) | Design partner programs — tech integrations, co-marketing, channel resellers, and co-sell motions |
-| [demand-generation](skills/demand-generation/) | Build full-funnel demand gen — content engine, paid strategy, lead scoring, attribution, and sales SLA |
+| [product-marketing-context](skills/product-marketing-context/) | Build the shared context document all other skills read first |
+| **Conversion** | |
+| [page-cro](skills/page-cro/) | Audit and optimize any marketing page for conversions |
+| [signup-flow-cro](skills/signup-flow-cro/) | Reduce friction in signup and trial activation flows |
+| [onboarding-cro](skills/onboarding-cro/) | Get users to first value faster after signup |
+| [form-cro](skills/form-cro/) | Optimize lead capture, contact, and checkout forms |
+| [popup-cro](skills/popup-cro/) | Create and improve modals, overlays, and sticky bars |
+| [paywall-upgrade-cro](skills/paywall-upgrade-cro/) | Convert free users to paid at in-app upgrade moments |
+| **Copy** | |
+| [copywriting](skills/copywriting/) | Write conversion-focused copy for any marketing page |
+| [copy-editing](skills/copy-editing/) | Edit and sharpen existing copy without changing core message |
+| [cold-email](skills/cold-email/) | Write B2B cold outreach sequences that get replies |
+| [email-sequence](skills/email-sequence/) | Design automated email flows and lifecycle programs |
+| [social-content](skills/social-content/) | Create content for LinkedIn, X, Instagram, and TikTok |
+| [brand-voice](skills/brand-voice/) | Define tone guidelines, vocabulary, and writing style standards |
+| **SEO** | |
+| [seo-audit](skills/seo-audit/) | Diagnose technical and on-page SEO issues |
+| [ai-seo](skills/ai-seo/) | Optimize content to appear in AI-generated answers |
+| [programmatic-seo](skills/programmatic-seo/) | Build SEO content at scale from templates and data |
+| [site-architecture](skills/site-architecture/) | Plan URL structure, navigation, and internal linking |
+| [competitor-alternatives](skills/competitor-alternatives/) | Build comparison and "alternatives to" pages |
+| [schema-markup](skills/schema-markup/) | Implement JSON-LD structured data for rich snippets |
+| [content-strategy](skills/content-strategy/) | Plan topic clusters, pillars, and editorial calendars |
+| [video-marketing](skills/video-marketing/) | YouTube strategy, video SEO, and repurposing workflows |
+| **Paid** | |
+| [paid-ads](skills/paid-ads/) | Run campaigns across Google, Meta, LinkedIn, and TikTok |
+| [ad-creative](skills/ad-creative/) | Generate and iterate ad creative at scale |
+| **Analytics & Testing** | |
+| [analytics-tracking](skills/analytics-tracking/) | Set up and audit event tracking across GA4, Mixpanel, and GTM |
+| [ab-test-setup](skills/ab-test-setup/) | Design statistically valid A/B and multivariate experiments |
+| **Growth** | |
+| [churn-prevention](skills/churn-prevention/) | Build cancel flows, save offers, and win-back campaigns |
+| [free-tool-strategy](skills/free-tool-strategy/) | Plan calculators and generators for SEO and lead gen |
+| [referral-program](skills/referral-program/) | Design referral and affiliate growth loops |
+| [product-led-growth](skills/product-led-growth/) | Design PLG motions, viral loops, and expansion triggers |
+| [community-led-growth](skills/community-led-growth/) | Build and grow a product community |
+| [influencer-marketing](skills/influencer-marketing/) | Run creator partnerships from brief to measurement |
+| **Strategy** | |
+| [gtm-strategy](skills/gtm-strategy/) | Build go-to-market plans with ICP tiers and channel sequencing |
+| [launch-strategy](skills/launch-strategy/) | Plan product launches with timelines and channel playbooks |
+| [pricing-strategy](skills/pricing-strategy/) | Advise on pricing models, tiers, and packaging |
+| [marketing-ideas](skills/marketing-ideas/) | Library of proven SaaS marketing ideas matched to your stage |
+| [marketing-psychology](skills/marketing-psychology/) | Apply behavioral science to marketing decisions |
+| [demand-generation](skills/demand-generation/) | Build full-funnel pipeline programs with attribution |
+| [competitive-intelligence](skills/competitive-intelligence/) | Build battlecards, run win/loss analysis, track competitors |
+| **Partnerships & ABM** | |
+| [account-based-marketing](skills/account-based-marketing/) | Target account programs with 1:1 and 1:few personalization |
+| [partnership-strategy](skills/partnership-strategy/) | Tech partnerships, co-marketing, and channel programs |
+| **Sales & RevOps** | |
+| [revops](skills/revops/) | Lead scoring, routing, and marketing-to-sales handoff |
+| [sales-enablement](skills/sales-enablement/) | Pitch decks, one-pagers, objection handling, demo scripts |
 
-## Installation
+---
 
-### Option 1: CLI Install (Recommended)
+## Getting started
+
+### Step 1 — Install skills
 
 ```bash
-# Install all skills
+# All skills
 npx skills add erron-ai/marketing-skills
 
-# Install specific skills
-npx skills add erron-ai/marketing-skills --skill page-cro copywriting
+# Pick specific ones
+npx skills add erron-ai/marketing-skills --skill page-cro copywriting seo-audit
 
-# List available skills
+# See what's available
 npx skills add erron-ai/marketing-skills --list
 ```
 
-Installs to `.agents/skills/` (with `.claude/skills/` symlink for Claude Code).
-
-### Option 2: Claude Code Plugin
-
-```bash
-/plugin marketplace add erron-ai/marketing-skills
-/plugin install marketing-skills
-```
-
-### Option 3: Clone and Copy
+Or clone and copy manually:
 
 ```bash
 git clone https://github.com/erron-ai/marketing-skills.git
 cp -r marketing-skills/skills/* .agents/skills/
 ```
 
-### Option 4: Git Submodule
+### Step 2 — Set up context
 
-```bash
-git submodule add https://github.com/erron-ai/marketing-skills.git .agents/marketing-skills
-```
-
-Then reference skills from `.agents/marketing-skills/skills/`.
-
-### Option 5: Fork and Customize
-
-1. Fork this repository
-2. Customize skills for your product and audience
-3. Clone your fork into your projects
-
-## Usage
-
-Once installed, describe what you want to do:
+Run the `product-marketing-context` skill first. It creates `.agents/product-marketing-context.md` — a shared file that every other skill reads before starting work.
 
 ```
-"Help me optimize this landing page for signups"
-→ Uses page-cro skill
-
-"Write homepage copy for my developer tool"
-→ Uses copywriting skill
-
-"Set up event tracking for our onboarding flow"
-→ Uses analytics-tracking skill
-
-"Plan a 6-email welcome sequence for new users"
-→ Uses email-sequence skill
-
-"Run an SEO audit on our marketing site"
-→ Uses seo-audit skill
+"Set up my product marketing context"
 ```
 
-You can also invoke skills directly:
+You only do this once per project.
+
+### Step 3 — Start working
+
+Describe what you need:
+
+```
+"Audit this landing page and tell me what to change"
+"Write a 5-email onboarding sequence for new signups"
+"Plan our Q1 SEO content calendar"
+"Set up conversion tracking for our checkout flow"
+"Build a go-to-market plan for our new product"
+```
+
+Or invoke a skill directly:
 
 ```
 /page-cro
-/email-sequence
-/seo-audit
-/launch-strategy
+/gtm-strategy
+/cold-email
+/demand-generation
 ```
 
-## Skill Categories
+---
 
-### Conversion Optimization
-- `page-cro` — Any marketing page
-- `signup-flow-cro` — Registration and trial activation flows
-- `onboarding-cro` — Post-signup activation
-- `form-cro` — Lead capture and non-signup forms
-- `popup-cro` — Modals, overlays, and sticky bars
-- `paywall-upgrade-cro` — In-app upgrade and upsell moments
+## Tool integrations
 
-### Content & Copy
-- `copywriting` — Marketing page copy
-- `copy-editing` — Edit and improve existing copy
-- `cold-email` — B2B cold outreach and follow-up sequences
-- `email-sequence` — Automated email flows and drip campaigns
-- `social-content` — Social media content across platforms
+The `tools/` directory has integration guides for 78 marketing platforms — authentication setup, common API operations, and agent-specific guidance for each tool.
 
-### SEO & Discovery
-- `seo-audit` — Technical and on-page SEO diagnosis
-- `ai-seo` — Optimization for AI search (AEO, GEO, LLMO)
-- `programmatic-seo` — Scaled page generation from templates and data
-- `site-architecture` — Page hierarchy, navigation, and URL structure
-- `competitor-alternatives` — Comparison and alternatives pages
-- `schema-markup` — Structured data and rich snippets
-- `content-strategy` — Topic clusters, pillars, and editorial calendars
+Categories: Analytics · SEO · CRM · Email · Cold Email · Paid Ads · Referral · Enrichment · CRO · Automation · Forms · Messaging · Social · Video · Reviews · Push · Webinars · Product Analytics · Competitive Intel · Commerce · and more.
 
-### Paid & Distribution
-- `paid-ads` — Google, Meta, LinkedIn, TikTok campaigns
-- `ad-creative` — Ad creative generation and iteration
+See [`tools/REGISTRY.md`](tools/REGISTRY.md) for the full index.
 
-### Measurement & Testing
-- `analytics-tracking` — Event tracking setup and audit
-- `ab-test-setup` — Experiment design and statistical planning
-
-### Retention
-- `churn-prevention` — Cancel flows, save offers, dunning, and win-back
-
-### Growth Engineering
-- `free-tool-strategy` — Marketing tools and calculators
-- `referral-program` — Referral and affiliate programs
-
-### Strategy & Monetization
-- `marketing-ideas` — Proven SaaS marketing ideas library
-- `marketing-psychology` — Behavioral science applied to marketing
-- `launch-strategy` — Product and feature launch planning
-- `pricing-strategy` — Pricing, packaging, and monetization
-- `gtm-strategy` — Go-to-market planning and launch sequencing
-- `demand-generation` — Full-funnel pipeline generation
-
-### Growth & PLG
-- `product-led-growth` — PLG motion design and activation optimization
-- `community-led-growth` — Community building and flywheel design
-- `influencer-marketing` — Creator partnerships and campaign management
-
-### Competitive & Brand
-- `competitive-intelligence` — Competitive analysis, battlecards, and win/loss
-- `brand-voice` — Voice definition, tone guidelines, and style standards
-
-### ABM & Partnerships
-- `account-based-marketing` — Target account programs and buying committee plays
-- `partnership-strategy` — Tech partnerships, co-marketing, and reseller programs
-
-### Video
-- `video-marketing` — YouTube strategy, video SEO, and repurposing workflows
-
-### Sales & RevOps
-- `revops` — Lead lifecycle, scoring, routing, and pipeline management
-- `sales-enablement` — Sales decks, one-pagers, objection handling, demo scripts
+---
 
 ## Contributing
 
-Found a way to improve a skill or have a new one to suggest? PRs and issues are welcome.
+PRs are welcome — new skills, improvements to existing ones, or additional tool integrations.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding or improving skills and tools.
+Open an [issue](https://github.com/erron-ai/marketing-skills/issues) before building something large so we can align on scope.
+
+---
 
 ## License
 
-[MIT](LICENSE) — Use these however you want.
+[MIT](LICENSE)
