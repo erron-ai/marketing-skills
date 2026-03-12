@@ -1,0 +1,19 @@
+{
+  "skill_name": "free-tool-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We make email marketing software for e-commerce brands. What free tools could we build to drive leads and SEO traffic?",
+      "expected_output": "Should recommend 3-5 specific tool ideas relevant to email marketing for e-commerce (e.g., subject line grader, email ROI calculator, deliverability checker). Should explain why each tool works for this audience. Should rank by expected ROI. Should provide implementation guidance for the top recommendation. Should outline a lead capture strategy.",
+      "assertions": [
+        "Recommends 3-5 specific tool ideas",
+        "Ideas are relevant to email marketing and e-commerce ICP",
+        "Explains why each tool works for this audience",
+        "Ranks by expected ROI",
+        "Provides implementation guidance",
+        "Outlines lead capture strategy"
+      ],
+      "files": []
+    }
+  ]
+}
