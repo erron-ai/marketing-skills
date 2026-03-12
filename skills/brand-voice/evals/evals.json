@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Voice discovery",
+    "prompt": "Help me define the brand voice for a fintech startup that makes payroll software for small businesses. They want to feel approachable but credible.",
+    "expected": ["trait", "personality", "example", "contrast"]
+  },
+  {
+    "name": "Tone spectrum",
+    "prompt": "Map out how our tone should shift across our error messages, homepage, and sales emails.",
+    "expected": ["tone", "context", "example", "spectrum"]
+  },
+  {
+    "name": "Vocabulary guide",
+    "prompt": "Build a vocabulary guide for a developer tools company — words to use and words to avoid.",
+    "expected": ["Use This", "Not This", "avoid", "jargon"]
+  },
+  {
+    "name": "Before/after examples",
+    "prompt": "Give me before and after examples of our homepage headline rewritten in our new bold, direct brand voice.",
+    "expected": ["before", "after", "on-brand", "headline"]
+  }
+]
