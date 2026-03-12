@@ -1,0 +1,18 @@
+{
+  "skill_name": "popup-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have an exit intent popup with a 2.1% conversion rate offering 'sign up for our newsletter.' How do we improve it?",
+      "expected_output": "Should identify generic newsletter offer as the primary problem. Should recommend replacing with a specific, valuable offer tied to the content. Should provide 2-3 alternative offers with rationale. Should recommend improved copy with new headline, subheadline, and CTA button text. Should suggest A/B test ideas.",
+      "assertions": [
+        "Identifies generic offer as primary problem",
+        "Recommends specific valuable alternative offers",
+        "Provides 2-3 copy alternatives",
+        "Suggests improved CTA button copy",
+        "Recommends A/B test ideas"
+      ],
+      "files": []
+    }
+  ]
+}
