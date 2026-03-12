@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Influencer identification",
+    "prompt": "Find the right influencer profile for a B2B project management tool targeting engineering managers on YouTube.",
+    "expected": ["engagement rate", "niche", "ICP match", "scoring", "micro"]
+  },
+  {
+    "name": "Outreach message",
+    "prompt": "Write an influencer outreach message for a no-code automation tool to send to a LinkedIn creator with 25K followers in the ops space.",
+    "expected": ["personalized", "product description", "partnership", "CTA"]
+  },
+  {
+    "name": "Campaign brief",
+    "prompt": "Write a full campaign brief for a YouTube integration video for our API monitoring tool.",
+    "expected": ["deliverables", "key messages", "approval process", "tracking", "compensation"]
+  },
+  {
+    "name": "ROI measurement",
+    "prompt": "How should I measure the ROI of our micro-influencer campaign that just ran?",
+    "expected": ["reach", "CTR", "conversion rate", "CPA", "UTM"]
+  }
+]
