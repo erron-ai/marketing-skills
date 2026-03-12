@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Community purpose",
+    "prompt": "Help me define the purpose and identity for a community around a data engineering tool for mid-market companies.",
+    "expected": ["identity", "purpose", "member", "not the product"]
+  },
+  {
+    "name": "Platform selection",
+    "prompt": "Should I build my community on Slack, Discord, or Circle? We're a B2B SaaS for marketing ops teams.",
+    "expected": ["Slack", "Discord", "Circle", "comparison", "recommendation"]
+  },
+  {
+    "name": "Seeding strategy",
+    "prompt": "How do I get the first 100 members into my community without it feeling empty?",
+    "expected": ["founding member", "seed", "power users", "content", "invite"]
+  },
+  {
+    "name": "Flywheel design",
+    "prompt": "Design a community flywheel for our developer tools community on Discord.",
+    "expected": ["flywheel", "discover", "contribute", "invite", "friction"]
+  }
+]
