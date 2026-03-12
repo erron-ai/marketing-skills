@@ -1,0 +1,18 @@
+{
+  "skill_name": "form-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our demo request form has 8 fields and we're getting a 12% completion rate. Industry average is around 20-25%. What should we cut?",
+      "expected_output": "Should apply the field audit framework. Should identify which fields to remove or make optional. Should apply the value exchange table to determine appropriate field count for a demo request (4-6). Should recommend keeping first name, email, and 1-2 qualifying questions. Should suggest moving company size and phone to post-submission. Should recommend new CTA copy for the submit button.",
+      "assertions": [
+        "Applies field audit framework",
+        "Identifies fields to remove",
+        "References appropriate field count for demo requests",
+        "Suggests deferring non-essential fields",
+        "Recommends improved CTA button copy"
+      ],
+      "files": []
+    }
+  ]
+}
