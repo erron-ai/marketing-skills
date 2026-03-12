@@ -1,0 +1,19 @@
+{
+  "skill_name": "content-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a time-tracking tool for agencies. We want to start a content marketing program but have no content yet and can only publish 2 posts per month. Where do we start?",
+      "expected_output": "Should not overwhelm with a 50-post plan. Should recommend 3 content pillars appropriate for agencies researching time tracking. Should create a 90-day editorial calendar with 6 posts. Should apply the topic cluster model. Should prioritize by SEO opportunity given resource constraints. Should provide a simple production workflow for 2 posts per month.",
+      "assertions": [
+        "Recommends 3 appropriate content pillars",
+        "Creates 90-day calendar with 6 posts",
+        "Applies topic cluster model",
+        "Prioritizes by SEO opportunity",
+        "Provides simple production workflow",
+        "Is realistic about resource constraints"
+      ],
+      "files": []
+    }
+  ]
+}
