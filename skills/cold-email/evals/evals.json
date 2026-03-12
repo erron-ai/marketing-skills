@@ -1,0 +1,21 @@
+{
+  "skill_name": "cold-email",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a 4-email cold outreach sequence for our SaaS analytics tool targeting VP of Marketing at B2B SaaS companies with 50-200 employees.",
+      "expected_output": "Should load product-marketing-context.md first. Should write 4 emails following the sequence structure: Opening (Day 1), Value Add (Day 3-4), Different Angle (Day 7-8), Breakup (Day 14-21). Each email should have a subject line, body under 150 words, and a specific low-friction ask. First email should not start with 'I' and should be about the prospect. Should include send day and purpose note for each email.",
+      "assertions": [
+        "Loads product-marketing-context.md",
+        "Produces 4 emails in sequence",
+        "First email does not open with 'I'",
+        "Each email has a subject line",
+        "Each email has a low-friction ask",
+        "Email 2 provides value not pitch",
+        "Email 4 is a breakup email",
+        "Emails are under 150 words each"
+      ],
+      "files": []
+    }
+  ]
+}
