@@ -1,0 +1,18 @@
+{
+  "skill_name": "paid-ads",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a B2B SaaS tool for HR teams at mid-market companies. We have $8,000/month to spend on paid ads. Where should we start?",
+      "expected_output": "Should recommend Google Ads for high-intent search demand plus LinkedIn for targeted B2B account reach. Should apply the platform selection framework. Should recommend starting with Google for bottom-of-funnel and LinkedIn for mid-funnel with a gated asset. Should suggest budget allocation between the two. Should provide campaign structure for each platform.",
+      "assertions": [
+        "Applies platform selection framework",
+        "Recommends appropriate platforms for B2B HR",
+        "Suggests budget allocation",
+        "Provides campaign structure",
+        "References conversion tracking setup"
+      ],
+      "files": []
+    }
+  ]
+}
