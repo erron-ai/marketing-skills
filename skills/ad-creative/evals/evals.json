@@ -1,0 +1,18 @@
+{
+  "skill_name": "ad-creative",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write 5 Meta ad variations for our project management tool targeting marketing managers at companies of 50-200 people.",
+      "expected_output": "Should load product-marketing-context.md. Should produce 5 variations testing different angles (at minimum: pain, outcome, social proof, time savings, and one more). Each variation should have: primary text with a hook in the first sentence, a headline, and a description. Should note which angle each variation is testing.",
+      "assertions": [
+        "Produces 5 variations",
+        "Tests different angles per variation",
+        "Each has primary text, headline, and description",
+        "First sentence of primary text is a hook",
+        "Notes the angle being tested for each"
+      ],
+      "files": []
+    }
+  ]
+}
