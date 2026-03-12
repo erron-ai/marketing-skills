@@ -1,0 +1,18 @@
+{
+  "skill_name": "schema-markup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Add FAQ schema to our pricing page. We have 5 FAQs about pricing, billing, and cancellation.",
+      "expected_output": "Should produce a complete FAQPage JSON-LD schema block. Should include all 5 FAQ questions as Question/acceptedAnswer pairs. Should provide the complete script tag with type=application/ld+json. Should note where to add it (head or end of body). Should recommend validating with Google Rich Results Test.",
+      "assertions": [
+        "Produces complete FAQPage JSON-LD",
+        "Includes all questions as proper schema entities",
+        "Provides complete script tag",
+        "Notes placement",
+        "Recommends validation"
+      ],
+      "files": []
+    }
+  ]
+}
