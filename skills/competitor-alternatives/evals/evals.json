@@ -1,0 +1,18 @@
+{
+  "skill_name": "competitor-alternatives",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We want to build a page targeting people searching 'alternatives to Salesforce' who are looking for a simpler CRM.",
+      "expected_output": "Should recommend Format 2 (you-as-the-alternative) or Format 3 (category alternatives list) based on whether the user's product is the best fit for this query. Should provide the page structure with hero, feature comparison, switch ease section, and social proof. Should recommend being honest about trade-offs. Should provide headline options.",
+      "assertions": [
+        "Recommends appropriate page format",
+        "Provides full page structure",
+        "Includes switch ease section",
+        "Recommends honest comparison",
+        "Provides headline options"
+      ],
+      "files": []
+    }
+  ]
+}
