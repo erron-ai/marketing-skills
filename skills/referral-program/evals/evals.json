@@ -1,0 +1,19 @@
+{
+  "skill_name": "referral-program",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a project management SaaS with $100/month plans and a 24-month average customer LTV. How should we structure a referral program?",
+      "expected_output": "Should apply the reward structure analysis. With $2,400 LTV, should recommend a meaningful reward (cash, credits, or discount). Should recommend bilateral structure with rewards tied to the referred user taking a paid action. Should recommend timing the ask after activation or upgrade. Should provide program design, ask flow, and launch plan.",
+      "assertions": [
+        "Applies reward structure analysis based on LTV",
+        "Recommends appropriate reward value",
+        "Recommends bilateral structure",
+        "Ties reward to paid action by referred user",
+        "Recommends optimal ask timing",
+        "Provides program design and launch plan"
+      ],
+      "files": []
+    }
+  ]
+}
