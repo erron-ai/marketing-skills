@@ -1,0 +1,19 @@
+{
+  "skill_name": "copy-editing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Edit this homepage hero: 'At Acme, we leverage best-in-class solutions to enable optimization of your marketing operations through our innovative platform.'",
+      "expected_output": "Should run through all 5 editing passes on this copy. Should identify: jargon ('leverage,' 'best-in-class,' 'innovative'), passive voice, abstract nouns ('enable optimization of'), and weak opener ('At Acme'). Should produce a cleaner, specific, outcome-focused rewrite. Should provide edit summary explaining changes.",
+      "assertions": [
+        "Identifies jargon and corporate-speak",
+        "Fixes passive voice",
+        "Replaces abstract nouns with concrete verbs",
+        "Removes weak opener",
+        "Produces cleaner rewrite",
+        "Provides edit summary"
+      ],
+      "files": []
+    }
+  ]
+}
