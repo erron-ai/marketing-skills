@@ -1,0 +1,19 @@
+{
+  "skill_name": "seo-audit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our organic traffic dropped 30% last month. We have access to Google Search Console. What should we check?",
+      "expected_output": "Should start with Search Console data to diagnose the drop. Should check for indexing issues (Coverage report), Core Web Vitals changes, manual actions, and search performance by page and query. Should apply the full audit framework. Should prioritize diagnostic steps in order of likelihood given the symptoms. Should provide a specific action plan.",
+      "assertions": [
+        "Starts with Search Console diagnosis",
+        "Checks indexing and coverage",
+        "Checks Core Web Vitals",
+        "Checks for manual actions",
+        "Analyzes search performance by page",
+        "Provides prioritized action plan"
+      ],
+      "files": []
+    }
+  ]
+}
