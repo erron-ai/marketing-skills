@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Define aha moment",
+    "prompt": "Help me define the aha moment for a project management tool used by remote engineering teams.",
+    "expected": ["aha moment", "behavior", "retention", "specific action"]
+  },
+  {
+    "name": "Activation funnel",
+    "prompt": "Map the activation funnel for a B2B analytics platform. We currently see 60% drop-off after signup.",
+    "expected": ["Step 1", "drop-off", "activation bottleneck", "aha moment"]
+  },
+  {
+    "name": "Viral loop design",
+    "prompt": "Design a viral loop for a no-code form builder that creates shareable forms.",
+    "expected": ["viral loop", "output loop", "viral coefficient", "conversion"]
+  },
+  {
+    "name": "Tier design",
+    "prompt": "How should we structure free vs paid tiers for a developer API monitoring tool?",
+    "expected": ["upgrade trigger", "free tier", "paid tier", "seat", "usage"]
+  }
+]
