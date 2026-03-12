@@ -1,0 +1,49 @@
+{
+  "skill_name": "page-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our SaaS landing page gets 4,000 visitors a month from paid search but only converts at 1.1%. Can you help figure out what's wrong?",
+      "expected_output": "Should check for product-marketing-context.md first. Should identify this as a landing page with a paid search traffic source. Should apply the full analysis framework starting with value proposition clarity. Should flag message match between paid ads and landing page as a key diagnostic area. Should provide output in Quick Wins, High-Impact Changes, Experiments, and Copy Alternatives sections.",
+      "assertions": [
+        "Checks for product-marketing-context.md",
+        "Identifies page as landing page",
+        "Identifies paid search as traffic source",
+        "Checks for message match",
+        "Applies CRO analysis framework",
+        "Produces Quick Wins section",
+        "Produces High-Impact Changes section",
+        "Produces Experiments section",
+        "Provides copy alternatives"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "our pricing page isn't working — most people choose the cheapest option or leave",
+      "expected_output": "Should apply the Pricing Page framework. Should address recommended plan signaling, middle-tier differentiation, and 'which plan is right for me' anxiety. Should suggest specific changes to plan naming, feature comparison, and visual hierarchy. Should recommend experiments for plan presentation and social proof placement near pricing.",
+      "assertions": [
+        "Applies Pricing Page framework",
+        "Addresses recommended plan signaling",
+        "Addresses plan differentiation",
+        "Addresses visitor anxiety about plan choice",
+        "Suggests specific fixes",
+        "Recommends testable experiments"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We redesigned our homepage and now conversions dropped from 3.8% to 2.1%. Something broke.",
+      "expected_output": "Should treat this as a diagnostic audit focused on what changed. Should check all seven framework dimensions for likely regression causes: lost trust signals, weakened value prop, CTA changes, added friction, message match issues. Should provide fixes in priority order. Should recommend which changes to revert immediately vs. test further.",
+      "assertions": [
+        "Treats as diagnostic audit",
+        "Checks all framework dimensions",
+        "Identifies likely regression causes",
+        "Prioritizes fixes by impact",
+        "Recommends revert vs. test decisions"
+      ],
+      "files": []
+    }
+  ]
+}
