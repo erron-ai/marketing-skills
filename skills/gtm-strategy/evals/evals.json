@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ICP tiers defined",
+    "prompt": "Help me define ICP tiers for a B2B SaaS product that automates invoice reconciliation for mid-market finance teams.",
+    "expected": ["Tier 1", "Tier 2", "pain", "deal size", "channel"]
+  },
+  {
+    "name": "Channel selection",
+    "prompt": "We have a developer tool for API monitoring. Which GTM channels should we prioritize and why?",
+    "expected": ["community", "content", "cold outbound", "product-led", "rationale"]
+  },
+  {
+    "name": "Launch timeline",
+    "prompt": "Build a 90-day launch sequence for our new project management tool targeting design agencies.",
+    "expected": ["Phase 0", "Phase 1", "Phase 2", "Phase 3", "metrics"]
+  },
+  {
+    "name": "GTM doc output",
+    "prompt": "Create a full GTM plan document for a no-code automation tool.",
+    "expected": ["# GTM Plan", "ICP Tiers", "Channel Strategy", "Launch Timeline", "Success Metrics"]
+  }
+]
