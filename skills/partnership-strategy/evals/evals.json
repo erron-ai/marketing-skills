@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Partnership type selection",
+    "prompt": "What type of partnerships should a B2B workflow automation tool prioritize in year one?",
+    "expected": ["technology", "co-marketing", "integration", "channel", "recommendation"]
+  },
+  {
+    "name": "Partner identification",
+    "prompt": "Identify the top 5 technology partnership candidates for a customer data platform targeting e-commerce brands.",
+    "expected": ["scoring", "ICP overlap", "tech stack", "Shopify", "candidates"]
+  },
+  {
+    "name": "Partnership structure",
+    "prompt": "Design the structure for a referral partnership with a marketing agency that serves our ICP.",
+    "expected": ["value exchange", "referral fee", "responsibilities", "commitment level"]
+  },
+  {
+    "name": "Co-marketing campaign",
+    "prompt": "Plan a co-marketing campaign between our analytics tool and a CRM partner with 10K customers each.",
+    "expected": ["webinar", "joint email", "case study", "lead sharing", "audience"]
+  }
+]
