@@ -1,0 +1,19 @@
+{
+  "skill_name": "email-sequence",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build a 5-email trial sequence for our project management SaaS. Trial is 14 days.",
+      "expected_output": "Should apply the trial-to-paid sequence framework. Should produce 5 emails with timing relative to trial start. Should include subject line, preview text, email body, and CTA for each email. Each email should have one clear goal. Email 4 (3 days before expiry) should emphasize what they'll lose. Email 5 should be an urgency-driven last chance email.",
+      "assertions": [
+        "Applies trial-to-paid framework",
+        "Produces 5 emails with timing",
+        "Each email has subject line and preview text",
+        "Each email has one CTA",
+        "Email 4 is pre-expiry urgency email",
+        "Email 5 is last-chance email"
+      ],
+      "files": []
+    }
+  ]
+}
