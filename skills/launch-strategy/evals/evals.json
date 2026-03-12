@@ -1,0 +1,19 @@
+{
+  "skill_name": "launch-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're launching a new AI feature in 6 weeks and want to make a big splash. We have a 5,000-person email list and active communities on LinkedIn and Twitter.",
+      "expected_output": "Should produce a week-by-week timeline for the 6-week lead-up. Should create a channel plan for email, LinkedIn, and Twitter. Should include a launch-day coordination plan. Should provide an asset checklist. Should recommend a post-launch follow-through plan. Should define success metrics.",
+      "assertions": [
+        "Produces week-by-week timeline",
+        "Creates channel plan for each platform",
+        "Includes launch-day coordination",
+        "Provides asset checklist",
+        "Includes post-launch plan",
+        "Defines success metrics"
+      ],
+      "files": []
+    }
+  ]
+}
